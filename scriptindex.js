@@ -67,7 +67,7 @@ function formatNumber(number) {
 // SIMULA LA CARGA DE PRODUCTOS Y SU VISUALIZACIÓN EN LA PÁGINA PRINCIPAL
 function displayProducts(category = '', searchQuery = '') {
     const products = [
-    { 
+        { 
             id: 1, 
             image: 'img/tacos.jpg', 
             name: 'Tacos de birria', 
@@ -176,75 +176,59 @@ function openModal(productId) {
     const products = [
         { 
             id: 1, 
-            image: 'img/hamburguesa.jpg', 
-            name: 'La Costeña', 
-            category: 'hamburguesas', 
-            price: 25000, 
-            description: 'Deliciosa hamburguesa con carne de res.' 
+            image: 'img/tacos.jpg', 
+            name: 'Tacos de birria', 
+            category: 'tacos', 
+            price: 17000, 
+            description: 'Carnitas doradas, tiernas y jugosas, perfectas con cebolla y cilantro..' 
         },
         { 
             id: 2, 
-            image: 'img/hamburguesa.jpg', 
-            name: 'La Mentirosa', 
-            category: 'hamburguesas', 
-            price: 28000, 
-            description: 'Deliciosa hamburguesa con carne de res.' 
+            image: 'img/tacos.jpg', 
+            name: 'Tacos al pastor', 
+            category: 'tacos', 
+            price: 17000, 
+            description: 'Cerdo marinado con un toque de piña y adobo. Sabor único en cada mordida..' 
         },
         { 
             id: 3, 
-            image: 'img/hamburguesa.jpg', 
-            name: 'La bestia', 
-            category: 'hamburguesas', 
-            price: 32000, 
-            description: 'Deliciosa hamburguesa con carne de res.' 
+            image: 'img/dorilocos.jpg', 
+            name: 'Doriloco S', 
+            category: 'dorilocos', 
+            price: 5000, 
+            description: 'Doritos crujientes con cueritos, jícama, cacahuates, chamoy, salsa y limón. ¡Un antojo loco y delicioso!.' 
         },
         { 
             id: 4, 
-            image: 'img/perrocaliente.png', 
-            name: 'Mister', 
-            category: 'perros', 
-            price: 16000, 
-            description: 'Salchicha con chili con carne, cebolla y queso rallado.' 
+            image: 'img/dorilocos.jpg', 
+            name: 'Doriloco M', 
+            category: 'dorilocos', 
+            price: 10000, 
+            description: 'Doritos crujientes con cueritos, jícama, cacahuates, chamoy, salsa y limón. ¡Un antojo loco y delicioso!.' 
         },
         { 
             id: 5, 
-            image: 'img/perrocaliente.png', 
-            name: 'Royal', 
-            category: 'perros', 
-            price: 19000, 
-            description: 'Salchicha con chili con carne, cebolla y queso rallado.' 
+            image: 'img/dorilocos.jpg', 
+            name: 'Doriloco L', 
+            category: 'dorilocos', 
+            price: 15000, 
+            description: 'Doritos crujientes con cueritos, jícama, cacahuates, chamoy, salsa y limón. ¡Un antojo loco y delicioso!.' 
         },
         { 
             id: 6, 
-            image: 'img/perrocaliente.png', 
-            name: 'Express', 
-            category: 'perros', 
-            price: 21000, 
-            description: 'Salchicha con chili con carne, cebolla y queso rallado.' 
+            image: 'img/dorilocos.jpg', 
+            name: 'Doriloco XL', 
+            category: 'dorilocos', 
+            price: 25000, 
+            description: 'Doritos crujientes con cueritos, jícama, cacahuates, chamoy, salsa y limón. ¡Un antojo loco y delicioso!.' 
         },
         { 
             id: 7, 
-            image: 'img/perrocaliente.png', 
-            name: 'Rancher', 
-            category: 'perros', 
-            price: 24000, 
-            description: 'Salchicha con chili con carne, cebolla y queso rallado.' 
-        },
-        { 
-            id: 8, 
-            image: 'img/picada.jpg', 
-            name: 'La Golosa', 
-            category: 'picadas', 
-            price: 27000, 
-            description: 'Embutidos, salami, jamón y prosciutto.' 
-        },
-        { 
-            id: 9, 
-            image: 'img/picada.jpg', 
-            name: 'La atrevida', 
-            category: 'picadas', 
-            price: 34000, 
-            description: 'Embutidos, salami, jamón y prosciutto.' 
+            image: 'img/dorilocos.jpg', 
+            name: 'Doriloco 2XL', 
+            category: 'dorilocos', 
+            price: 5000, 
+            description: 'Doritos crujientes con cueritos, jícama, cacahuates, chamoy, salsa y limón. ¡Un antojo loco y delicioso!.' 
         },
     ];
 

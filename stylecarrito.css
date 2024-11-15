@@ -287,7 +287,7 @@ h4{
 
 
 button {
-    background-color: #ffc400;
+    background-color: #00b915;
     color: white;
     border: none;
     padding: 12px 24px;
@@ -329,7 +329,7 @@ button:hover {
     border-radius: 8px;
     text-align: center;
     width: 300px;
-    box-shadow: 0 10px 100px #ffae00;
+    box-shadow: 0 10px 100px #00b915;
     opacity: 0;
     animation: fadeIn 0.3s forwards;
     justify-content: center;
@@ -359,7 +359,7 @@ button:hover {
     margin: 5px;
     width: 90%;
     font-size: 18px;
-    background-color: #ffc400;
+    background-color: #00b915;
     color: white;
     border: none;
     border-radius: 8px;
@@ -368,7 +368,7 @@ button:hover {
 }
 
 .modal button:hover {
-    background-color: #c29502;
+    background-color: #01740f;
 }
 
 /* Animación de aparición del modal */

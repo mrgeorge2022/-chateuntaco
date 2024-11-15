@@ -119,8 +119,8 @@ header {
 
 /* Estilo cuando el input está enfocado (focus) */
 #search-input:focus {
-    border-color: #ffc400; /* Cambia el color del borde cuando se enfoca */
-    box-shadow: 0 0 8px #ffc400; /* Agrega una sombra verde suave */
+    border-color: #00b915; /* Cambia el color del borde cuando se enfoca */
+    box-shadow: 0 0 8px #00b915; /* Agrega una sombra verde suave */
 }
 
 /* Estilo cuando el input tiene texto (opcional) */
@@ -354,18 +354,14 @@ nav ul li a {
 
 /* Efecto hover */
 nav ul li a:hover {
-    color: #ffc400; /* Texto blanco al hacer hover */
+    background-color: yellow ;
+    border-radius: 20px;
+    color: #3b9646; /* Texto blanco al hacer hover */
     transform: translateY(-3px); /* Efecto de desplazamiento hacia arriba */
 
 }
 
-/* Enlace activo */
-nav ul li a.active {
-    background-color: #ff6600; /* Fondo naranja para el enlace activo */
-    color: white; /* Texto blanco */
-    transform: scale(1.05); /* Efecto de agrandamiento */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-}
+
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -511,8 +507,8 @@ nav ul li a.active {
 
 /* Estilo para el botón de ordenar */
 .product-item button {
-    background-color: #ffc400; /* Fondo naranja */
-    color: #000000; /* Texto blanco */
+    background-color: #00b915; /* Fondo naranja */
+    color: #fff; /* Texto blanco */
     border: none;
     border-radius: 5px;
     padding: 10px 15px;
@@ -524,7 +520,7 @@ nav ul li a.active {
 
 /* Efecto hover en el botón de ordenar */
 .product-item button:hover {
-    background-color: #c29502; /* Color ligeramente más oscuro en hover */
+    background-color: #01740f; /* Color ligeramente más oscuro en hover */
     color: #fff;
 }
 
@@ -556,7 +552,7 @@ nav ul li a.active {
     max-width: 500px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 0px 100px #ffae00; /* Sombra alrededor del modal */
+    box-shadow: 0 0px 100px #00b915; /* Sombra alrededor del modal */
     animation: fadeIn 0.2s ease; /* Animación de entrada */
     position: relative; /* Necesario para posicionar elementos internos */
 }
@@ -634,8 +630,8 @@ nav ul li a.active {
 
 /* Botón de agregar al carrito */
 .modal-content button {
-    background-color: #ffc400;
-    color: #000;
+    background-color: #00b915;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 12px 20px;
@@ -646,7 +642,7 @@ nav ul li a.active {
 }
 
 .modal-content button:hover {
-    background-color: #c29502; /* Color ligeramente más oscuro en hover */
+    background-color: #01740f; /* Color ligeramente más oscuro en hover */
     color: #fff;
 }
 
