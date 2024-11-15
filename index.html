@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Échate un taco</title>
+    <link rel="icon" type="image/png" href="img/iconoinicio.jpg">
+</head>
+<body>
+    <header>
+        <div id="encabezado">
+            <!-- Logo -->
+            <img id="logo" src="img/iconoinicio.jpg" alt="Échate un taco" onclick="window.location.href='index.html'">
+            
+            <div>
+            <h1>Échate un taco</h1>
+            <div id="estado-tienda">
+            </div><!-- Estado de la tienda (si lo necesitas, puedes agregar contenido aquí) -->
+    </header>
+
+    
+
+<button id="floating-cart" onclick="window.location.href='carrito.html'">
+        <img src="img/carrito.png" alt="Carrito" id="cart-icon">
+        <span id="cart-count">0</span> <!-- Contador para mostrar la cantidad de productos -->
+        <div id="notification" class="notification"></div>
+    </button>
+</div>
+
+
+
+<div id="buscador">
+    <input type="text" id="search-input" placeholder="Buscar..." oninput="searchProducts()">
+</div>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="displayProducts()">Todos</a></li>
+            <li><a href="#" onclick="displayProducts('tacos')">Tacos</a></li>
+            <li><a href="#" onclick="displayProducts('dorilocos')">Dorilocos</a></li>
+            <li><a href="#" onclick="displayProducts('micheladas')">Micheladas</a></li>
+            <li><a href="#" onclick="displayProducts('aguas mxs')">Aguas mxs</a></li>
+            <li><a href="#" onclick="displayProducts('granizados')">Granizados</a></li>
+            <li><a href="#" onclick="displayProducts('otras bebidas')">Otras bebidas</a></li>
+            <li><a href="#" onclick="displayProducts('Churros')">Churros mx</a></li>
+            <li><a href="#" onclick="displayProducts('esquites')">Esquites</a></li>
+            <li><a href="#" onclick="displayProducts('marquesitas')">Marquesitas</a></li>
+            <li><a href="#" onclick="displayProducts('fresas con crema')">Fresas con crema</a></li>
+        </ul>
+    </nav>
+
+    <section id="product-list">
+        <!-- Los productos se mostrarán aquí dinámicamente -->
+    </section>
+
+    <!-- Modal para ver detalles del producto -->
+   <div id="product-modal" class="modal" >
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-product-name"></h2>
+            <img id="modal-product-image" src="" alt="Imagen del Producto" class="modal-product-image">
+            <p id="modal-product-description"></p>
+            <p><strong>$<span id="modal-product-price"></span></strong></p>
+            <textarea id="modal-product-instructions" placeholder="Añade tus indicaciones..."></textarea>
+            
+
+            <div class="quantity-control">
+                <button type="button" id="decrement" onclick="changeQuantity(-1)">-</button>
+                
+                <input type="text" id="modal-quantity" value="1"  oninput="validateQuantityInput()">
+
+                <button type="button" id="increment" onclick="changeQuantity(1)">+</button>
+            </div>
+            
+            <button id="add-to-cart-button" onclick="addToCartFromModal()">Agregar al carrito</button>
+
+        </div>
+    </div>
+</div>
+
+
+<div id="redessociales">
+    <a href="https://api.whatsapp.com/send?phone=573107350933&text=%C3%93rale%20wey%2C%20quiero%20pedir%20un%20Domcilio%20chingon!%F0%9F%94%A5%F0%9F%87%B2%F0%9F%87%BD">
+        <img src="img/redes/whatsapp.png" alt="Whatsapp" id="logoredes">
+    </a>
+
+    <a href="https://www.instagram.com/tacos_chingonesctg?igsh=bnZmaDN5MjdieW1m">
+        <img src="img/redes/instagram.png" alt="Instagram" id="logoredes">
+    </a>
+
+    <a href="https://www.tiktok.com/@Tacoschingonesctg">
+        <img src="img/redes/tiktok.png" alt="Facebook" id="logoredes">
+    </a>
+    </div>
+
+<div class="terms-container">
+    <label class="terms-label">
+        Politicas<a href="terms.html" target="_blank" class="terms-link">términos y condiciones</a>
+    </label>
+</div>
+
+    <footer>
+        <p>&copy; Échate un taco. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="scriptindex.js"></script>
+
+
+</body>
+</html>
